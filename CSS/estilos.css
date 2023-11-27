@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Rounded MT Std Extra Bold";
+    font-weight: bold;
+    color: rgb(124, 75, 151);
+    src: url("/tipofrafias/1f4f370b7927b3efa7adb53764797658.woff") format("woff");
+    src: url("/tipofrafias/Arial\ Rounded\ MT\ Std\ Extra\ Bold.woff") format("woff2");
+    overflow-x: hidden;
+}
+
+body,
+head,
+header {
+    background-color: rgb(241, 247, 247);
+}
+
+.navbar {
+    background-color: rgb(241, 247, 247);
+}
+
+.navbar-nav .nav-link {
+    color: rgb(124, 75, 151);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    padding: 0;
+}
+
+/*.navbar-brand img {
+    padding-left: 1%;
+}*/
+
+.todasSecciones {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#quienes-somos,
+#eventos {
+    background-color: rgb(222, 244, 206);
+}
+
+
+#quienes-somos h2 {
+    color: rgb(94, 176, 48);
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+
+#quienes-somos h1 {
+    color: rgb(124, 75, 151);
+}
+
+#nuestrosProductos, #catalogo, #contacto h1 {
+    color: rgb(94, 176, 48);
+}
+
+.card {
+    background-color: rgb(241, 247, 247);
+}
+
+.row {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card-body p.card-text {
+    color: rgb(124, 75, 151);
+}
+
+.card-body h3.card-title,
+.card-body h4 {
+    color: rgb(94, 176, 48);
+}
+
+.modal-content {
+    background-color: rgb(222, 244, 206);
+}
+
+.modal-content .modal-body p {
+    color: rgb(124, 75, 151);
+}
+
+.modal-content .modal-body h1 {
+    color: rgb(94, 176, 48);
+}
+
+.btn-primary  {
+    background-color: rgb(124, 75, 151);
+    color: rgb(94, 176, 48);
+    border-color: rgb(94, 176, 48);
+}
+
+.btn-primary:hover {
+    background-color: rgb(94, 176, 48);
+    color: rgb(124, 75, 151);
+    border-color: rgb(124, 75, 151);
+}
+
+
+.event h2{
+    color: rgb(94, 176, 48);
+}
+
+#quienes-somos, #nuestrosProductos, #catalogo, #contacto, #eventos{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow-x: hidden;  
+}
+
+#nuestrosProductos h2{
+    color: rgb(124, 75, 151);
+}
+
+.card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.event{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#eventos {
+    overflow-x: hidden;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+@media (min-width: 992px) {
+
+    .formula {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formula figure {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .form {
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+
+    .empresa img {
+        width: 20%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 70%;
+        height: auto;
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .formula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+
+    .empresa img {
+        width: 30%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .formula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+
+    .empresa img {
+        width: 40%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 40%;
+        height: auto;
+    }
+
+
+}
