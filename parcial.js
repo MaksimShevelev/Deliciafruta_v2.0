@@ -45,7 +45,7 @@ let productos = [
     },
     {
         id: 6,
-        nombre: 'Gomitas de forma frutas',
+        nombre: 'Con forma de frutas',
         descripcion: 'Una variedad de sabores de frutas en las gomitas',
         precio: 450,
         imagen: 'Gomitas_de_formas_de_frutas.jpg',
