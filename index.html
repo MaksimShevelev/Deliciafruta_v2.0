@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliciafruta</title>
+    <link rel="icon" href="media/logo2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="CSS/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <p>
+                    <a class="navbar-brand" href="#">Deliciafruta</a>
+                </p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#catalogo">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#principal_producto">Producto principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="navbar-carrito">
+                                <a class="nav-link" id="btn-ver-carrito1" data-bs-toggle="modal"
+                                    data-bs-target="#modalCarrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+
+                                    </svg>
+                                    <span id="navItemsAgregados" class="cart-count"></span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <figure>
+                        <img src="media/banner1.jpg" class="d-block w-100" alt="Gomigas con arándanos rojos">
+                    </figure>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <figure>
+                        <img src="media/banner2.jpg" class="d-block w-100" alt="Gomigas en forma de rodajas de naranja">
+                    </figure>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <figure>
+                        <img src="media/banner3.jpg" class="d-block w-100" alt="Gomigas con arándanos">
+                    </figure>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <figure>
+                        <img src="media/banner4.jpg" class="d-block w-100"
+                            alt="Gomigas en forma de piñas y corazones en un hermoso frasco">
+                    </figure>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <figure>
+                        <img src="media/banner5.jpg" class="d-block w-100" alt="Ositos de goma de colores">
+                    </figure>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Proximo</span>
+            </button>
+        </div>
+        <div class="todasSecciones">
+            <section id="quienes-somos">
+                <h1>DELICIAFRUTA</h1>
+                <div class="empresa">
+                    <h2>¿Quiénes somos?</h2>
+                    <p>Somos «Deliciafruta» una marca que produce golosinas y postres. Nuestra especialidad son
+                        las gomitas. Creamos alegría y felicidad para los amantes de los dulces. Nuestra amplia gama
+                        y gran variedad de golosinas aseguran que encontrarás tu sabor favorito.</p>
+                </div>
+                <div>
+                    <h2>Nuestro logotipo</h2>
+                    <figure>
+                        <img src="media/logo2.png" alt="Logo Deliciafruta en forma de mora jugosa y fresca">
+                    </figure>
+                    <p>Nuestro logotipo es una jugosa y fresca mora. Simboliza la naturalidad, la frescura de nuestros
+                        productos y su sabor intenso y vibrante. Además, evoca lindos recuerdos de la infancia. El
+                        diseño
+                        de nuestro logotipo resalta nuestro enfoque moderno y profesional hacia la marca, mientras que
+                        la
+                        palabra "Deliciafruta" subraya el sabor y la calidad de los productos que ofrecemos.</p>
+                </div>
+            </section>
+            <section>
+                <div id="nuestrosProductos">
+                    <h2>Nuestra fórmula de calidad</h2>
+                    <div class="formula">
+                        <figure>
+                            <img src="media/eco.png" alt="Logo ECO">
+                        </figure>
+                        <figure>
+                            <img src="media/mas.png" alt="Logo más">
+                        </figure>
+                        <figure>
+                            <img src="media/amor.png" alt="Logo amor">
+                        </figure>
+                        <figure>
+                            <img src="media/mas.png" alt="Logo más">
+                        </figure>
+                        <figure>
+                            <img src="media/reciclaje.png" alt="Logo reciclaje">
+                        </figure>
+                        <figure>
+                            <img src="media/ugual.png" alt="Logo igual">
+                        </figure>
+                        <figure>
+                            <img src="media/logo.png"
+                                alt="Logo Deliciafruta en forma de mora jugosa y fresca en circulo">
+                        </figure>
+                    </div>
+                    <p>Nuestra prioridad es la salud y el amor hacia el medio ambiente. No utilizamos aditivos
+                        dañinos
+                        ni artificiales. Todos los ingredientes con los que elaboramos nuestros productos son 100%
+                        naturales. También nos preocupamos por el medio ambiente por eso todos nuestros envases son
+                        completamente
+                        reciclables y biodegradables.</p>
+                </div>
+            </section>
+            <div id="minicarrito">
+                <div>
+                    <h2>Metodos de pago</h2>
+                    <div class="metodos_de_pago text-center">
+                        <div>
+                            <figure>
+                                <img src="media/metodos_de_pago/Mastercard_Logo.png" alt="logo mastercard">
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="media/metodos_de_pago/logo-visa.png" alt="logo visa">
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="media/metodos_de_pago/American-Express-Logo.png" alt="logo american express">
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="media/metodos_de_pago/UnionPay_logo.png" alt="logo unionpay">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrito">
+                    <h2>Carrito</h2>
+                    <p><span class="highlighted1">Total de productos:</span><span id="carritoItemsAgregados">0</span>
+                        productos
+                        agregados</p>
+                    <p><span class="highlighted1">Total precio: </span>ARS$ <span id="carritoTotal">0</span></p>
+                    <button type="submit" class="btn btn-primary" id="btn-ver-carrito" data-bs-toggle="modal"
+                        data-bs-target="#modalCarrito">Ver carrito</button>
+                </div>
+            </div>
+            <section id="catalogo">
+                <h2>Catálogo</h2>
+                <div class="filtros">
+                    <p><span class="highlighted1">Filtrar por categoría: </span><a href="#" class="btn btn-primary"
+                            data-category="Categoría 1">Clásico</a><a href="#" class="btn btn-primary"
+                            data-category="Categoría 2">Para regalo</a><a href="#" class="btn btn-primary"
+                            data-category="Categoría 3">Forma</a><a href="#" class="btn btn-primary">Borrar
+                            filtros</a></p>
+                </div>
+                <div class="productos">
+                    <div class="banner">
+                        <div id="filterBanner" class="filter-banner">
+                            <a href="javascript:void(0)" onclick="showFilterBanner(this)">
+                                <figure>
+                                    <img src="media/Banners/Banner_2.jpg" alt="Banner de ositos">
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="filterBanner1" class="filter-banner">
+                            <a href="javascript:void(0)" onclick="showFilterBanner(this)">
+                                <figure>
+                                    <img src="media/Banners/Banner_1.jpg" alt="Banner de regalo">
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="filterBanner2" class="filter-banner">
+                            <a href="#app">
+                                <figure>
+                                    <img src="media/Banners/Banner_3.jpg" alt="Banner de la app">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 1" data-productid="1">
+                                    <figure>
+                                        <img src="media/productos/con_jugo4.jpg" class="card-img-top"
+                                            alt="gomitascon naranja">
+                                    </figure>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Gomigas con jugo</h4>
+                                        <p class="card-text">Surtido de gomitas con agregado de jugo natural</p>
+                                        <h5>Precio: ARS $<span>500</span>/100 gr.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(1)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 2" data-productid="2">
+                                    <figure>
+                                        <img src="media/productos/gomitas_artesanal1.jpg" class="card-img-top"
+                                            alt="gomitas_artesanales con durazno">
+                                    </figure>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Gomitas artesanales</h4>
+                                        <p class="card-text">Delicadas gomitas artesanales hechas por nuestros
+                                            maestros
+                                        </p>
+                                        <h5>Precio: ARS $<span>600</span>/100 gr.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal1">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(2)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 3" data-productid="3">
+                                    <figure>
+                                        <img src="media/productos/ositos2.jpg" class="card-img-top"
+                                            alt="ositas_de_goma_multicolores_con_un_oso_grande">
+                                    </figure>
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">Ositos de goma</h4>
+                                        <p class="card-text">Ositos de goma famosas</p>
+                                        <h5>Precio: ARS $<span>350</span>/100 gr.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal2">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(3)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 1" data-productid="4">
+                                    <figure>
+                                        <img src="media/productos/golosinas2.jpg" class="card-img-top"
+                                            alt="golosinas_multicolores">
+                                    </figure>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Caramelos</h4>
+                                        <p class="card-text">Surtido de caramelos de varios sabores</p>
+                                        <h5>Precio: ARS $<span>250</span>/100 gr.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal3">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(4)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 2" data-productid="5">
+                                    <figure>
+                                        <img src="media/productos/set_regalo2.jpg" class="card-img-top"
+                                            alt="caja_de_regalo_con_gomitas_multicolor_con_borde_de_lazo">
+                                    </figure>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Set de regalo</h4>
+                                        <p class="card-text">1 kg de gomitas en un
+                                            bonito empaque de regalo</p>
+                                        <h5>Precio: ARS $<span>4000</span>/1 un.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal4">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(5)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem;">
+                                <div class="category" data-category="Categoría 3" data-productid="6">
+                                    <figure>
+                                        <img src="media/productos/formas_frutas3.jpg" class="card-img-top"
+                                            alt="Gomitas_de_formas_de_frutas">
+                                    </figure>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Gomitas con forma de frutas</h4>
+                                        <p class="card-text">Una variedad de sabores de frutas en las gomitas</p>
+                                        <h5>Precio: ARS $<span>450</span>/100 gr.</h5>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal5">Ver más</button>
+                                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                            onclick="addToCart(6)">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2>Nuestro producto principal</h2>
+            <h3>Las gomitas artesanales es nuestro producto principal.
+                Nuestra creación principal, simbolizando cuidado e individualidad</h3>
+            <section id="principal_producto">
+                <div>
+                    <div id="carouselExampleIndicators1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <figure>
+                                    <img src="media/artesanal1.jpg" class="d-block w-100"
+                                        alt="Gomitas artesanales y caja de gomitas artesanales con frambuesa y arándanos">
+                                </figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <figure>
+                                    <img src="media/artesanal2.jpg" class="d-block w-100"
+                                        alt="Gomitas artesanales y caja de gomitas artesanales con frambuesa y arándanos">
+                                </figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <figure>
+                                    <img src="media/artesanal3.jpg" class="d-block w-100"
+                                        alt="Gomitas artesanales de durazno, frambuesa, limón y menta">
+                                </figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <figure>
+                                    <img src="media/artesanal4.jpg" class="d-block w-100"
+                                        alt="Gomitas artesanales bonitas">
+                                </figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <figure>
+                                    <img src="media/artesanal5.jpg" class="d-block w-100"
+                                        alt="Gomitas artesanales de naranja">
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Proximo</span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    ¿Cómo lo elaboramos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Nos esforzamos por crear no solo un placer dulce, sino una verdadera experiencia,
+                                        llena de singularidad y el calor de las manos del maestro. Es por eso que las
+                                        gomitas se elaboran únicamente de forma manual. Nuestras gomitas artesanales no
+                                        solo te alegran, sino que también traen a tu hogar una atmósfera de calidez y
+                                        confort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    ¿Qué recetas usamos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Solo exclusivas. Cada receta es desarrollada cuidadosamente por nuestros
+                                        experimentados pasteleros para brindarte un sabor único.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Qué calidad ofrecemos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Solo ingredientes naturales y estricto control en el proceso de elaboración.
+                                        Prestamos atención incluso a los detalles más pequeños, vigilando la calidad de
+                                        cada ingrediente. Como resultado, obtienes no solo gomitas, sino una verdadera
+                                        obra de arte.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    ¿Dónde encontrarla?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Te invitamos a sumergirte en el mundo de nuestras tiendas y aplicación, donde no
+                                        solo podrás elegir tus sabores favoritos, sino también regalar alegría a tus
+                                        seres queridos. Las gomitas artesanales no es solo un producto, es una historia
+                                        en cada pedacito, creada para compartir la felicidad contigo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="eventos">
+                <h2>Nuestros eventos</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 event ">
+                        <figure>
+                            <img src="media/Degustacion.jpg"
+                                alt="Foto_para_degustacion_los_gomitas_dispuestos_en_cajas_pequeñas ">
+                        </figure>
+                        <h2>La degustación de nueva línea</h2>
+                        <h3>28/02/2024</h3>
+                        <p>Te invitamos a la degustación gratuita de nuestra nueva línea de gomitas
+                            "Premium". Estas gomitas obtuvieron el primer puesto en la exposición "Mejores gomitas
+                            de Argentina" que tuvo lugar el 10/01/2023 en Salta. Estas gomitas son nuestro orgullo.
+                            Aún no están disponibles en nuestras tiendas, pero tendrás la oportunidad única de
+                            probarlas gratis y hacer una reserva previa.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 event">
+                        <figure>
+                            <img src="media/gomitas_de_casa.jpg"
+                                alt="gomitas_caseras_decoradas_con_albaricoques_menta_y_lavanda">
+                        </figure>
+                        <h2>El festival "Gomitas caseras"</h2>
+                        <h3>20/03/2024</h3>
+                        <p>Estamos organizando el festival "Gomitas caseras". Apartir de las 9:00 en el Parque
+                            Centenario estaremos esperando a todos los interesados en participar en el concurso
+                            "Mejores gomitas caseras". A las 10:00 estaremos listos para recibir a todos los que
+                            quieran visitar nuestro festival y votar por las "Mejores gomitas caseras". Los
+                            ganadores recibirán premios valiosos y los visitantes disfrutarán de buenos momentos y de
+                            muchas gomitas deliciosas.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 event">
+                        <figure>
+                            <img src="media/dia_de_gomitas.jpg" alt="gomitas_rojas_dobladas_en_una_pila">
+                        </figure>
+                        <h2>Día Mundial de las Gomitas</h2>
+                        <h3>22/04/2024</h3>
+                        <p>Celebraremos el "Día Mundial de las Gomitas". También ese día estaremos
+                            celebrando otro evento: <span class="highlighted">cumplimos 10 años en el mercado</span>. En
+                            todas nuestras tiendas habrá descuentos y
+                            ofertas especiales para las compras. Y para nuestros clientes que también cumplan años el
+                            22/04, <span class="highlighted">tenemos una sorpresa especial preparada</span>.</p>
+                    </div>
+                </div>
+            </section>
+            <h2>Envío gratis en nuestra aplicación</h2>
+            <div id="app">
+                <div class="app">
+                    <figure id="movil">
+                        <img src="media/Free_Iphone_14_Pro_Mockup_3.png"
+                            alt="Aplicacion con logo de Diliciafruta en Iphone14 pro">
+                    </figure>
+                    <figure id="coche">
+                        <img src="media/Express_Van_Cargo_Carriers_Mockup_05.png"
+                            alt="Cohe de envio con ositos de goma y logos de Diliciafruta">
+                    </figure>
+                </div>
+                <section class="links">
+                    <div class="qr">
+                        <div class="apple">
+                            <h2><a href="https://www.apple.com/la/app-store/">apple</a></h2>
+                            <figure>
+                                <img src="media/QR_apple.png" alt="QR para descargar en appstore">
+                            </figure>
+                        </div>
+                        <div class="google">
+                            <h2><a href="https://play.google.com/store/games?hl=ru&gl=US&pli=1">google</a></h2>
+                            <figure>
+                                <img src="media/QR_google.png" alt="QR para descargar en google play">
+                            </figure>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>La APP DELICIAFRUTA</h2>
+                        <p>En nuestra aplicación, tus dulces favoritos estarán siempre cerca. Podrás hacer pedidos a
+                            domicilio con envío gratuito y pagar de la manera que prefieras. Puedes descargar la
+                            aplicación
+                            móvil a través de los enlaces o escaneando los códigos QR.</p>
+                    </div>
+                </section>
+            </div>
+            <h2>Contactos</h2>
+            <section class="contactos">
+                <div id="contacto">
+                    <div id="form">
+                        <h3>Suscribete, para recibir novedades y ofertas</h3>
+                        <form action="#" method="get">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                    placeholder="Ingrese su nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido"
+                                    placeholder="Ingrese su apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="example@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="tel" name="tel"
+                                    placeholder="Ingrese su número de teléfono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Comentario</label>
+                                <textarea class="form-control" id="comment" name="comment" rows="3"
+                                    placeholder="Escribe algo..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div id="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.992669539754!2d-58.39857512439329!3d-34.604346872954046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaea670d4e67%3A0x2198c954311ad6d9!2sEscuela%20Da%20Vinci%20Primera%20Escuela%20de%20Arte%20Multimedial!5e0!3m2!1sru!2sar!4v1706090784208!5m2!1sru!2sar"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="modal" id="myModal6" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h2>Datos del autor</h2>
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div>
+                            <figure><img src="media/foto.jpg" alt="foto de alumno"></figure>
+                            <p>Shevelev Maxim</p>
+                            <p>14/04/1991</p>
+                        </div>
+                        <div class="modal-body">
+                            <a href="mailto:m.v.shevelev1991@gmail.com?subject=¡Hola!" target="_blank"
+                                class="btn btn-primary1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                                    class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                    <path
+                                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                </svg></a>
+                            <a href="https://github.com/MaksimShevelev" class="btn btn-primary1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/maksim-shevelev-9a5320249/" class="btn btn-primary1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="modal" id="myModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Gomigas con jugo</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/con_jugo4.jpg" class="card-img-top"
+                                            alt="gomitas_con_jugo_multicolor">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/con_jugo1.jpg" class="card-img-top"
+                                            alt="gomitas con ciruela">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/con_jugo.jpg" class="card-img-top"
+                                            alt="gomitas con naranja">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Surtido de gomitas con agregado de jugo natural. Una paleta de sabores y jugos de
+                                frutas
+                                y bayas como: naranja, manzana, frutilla, piña, mandarina, limón, banana. Las
+                                gomitas
+                                están hechas con ingredientes de origen natural, sin adición de colorantes
+                                artificiales
+                                ni
+                                aditivos.</p>
+                            <h4>Precio: ARS $500/100 gr.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(1)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="myModal1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Gomigas artesanales</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/gomitas_artesanal1.jpg" class="card-img-top"
+                                            alt="gomitas_artesanales_rojos_con_hoja_de_menta">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/gomitas_artesanal2.jpg" class="card-img-top"
+                                            alt="gomitas con naranja">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/gomitas_artesanal3.jpg" class="card-img-top"
+                                            alt="gomitas con durazno">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Delicadas las gomitas artesanales hechas por nuestros maestros. La elaboración
+                                artesanal
+                                permite preservar y transmitir al máximo el sabor y del aroma de las gomitas. Están
+                                hechas con ingredientes de origen natural, sin añadir colorantes ni aditivos
+                                artificiales.</p>
+                            <h4>Precio: ARS $600/100 gr.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(2)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="myModal2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Ositos de goma</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/ositos2.jpg" class="card-img-top"
+                                            alt="ositas_de_goma_multicolores_con_un_oso_grande">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/ositos.jpg" class="card-img-top" alt="ositos de goma">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/ositos3.jpg" class="card-img-top"
+                                            alt="ositas de goma">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Ositos de goma famosos. Convertidos en un clásico, los ositos
+                                de goma te permitirán disfrutar de nuestras gomitas con tu forma favorita. Las
+                                gomitas
+                                están
+                                hechas con ingredientes de origen natural, sin adición de colorantes artificiales ni
+                                aditivos.</p>
+                            <h4>Precio: ARS $350/100 gr.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(3)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="myModal3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Caramelos</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/golosinas2.jpg" class="card-img-top"
+                                            alt="golosinas_multicolores">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/caramelos.jpg" class="card-img-top"
+                                            alt="caramelos diferentes">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/caramlos1.jpg" class="card-img-top"
+                                            alt="caramelos diferentes">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Surtido de caramelos de varios sabores. Regalarán felicidad a vos y a tus seres queridos.
+                                Su excelente sabor y la calidad excepcional no dejarán indiferente a
+                                nadie.Los
+                                caramelos están
+                                hechas con ingredientes de origen natural, sin adición de colorantes artificiales ni
+                                aditivos.</p>
+                            <h4>Precio: ARS $250/100 gr.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(4)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="myModal4" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Set de regalo</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/set_regalo2.jpg" class="card-img-top"
+                                            alt="caja_de_regalo_con_gomitas_multicolor_con_borde_de_lazo">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/set_regalo.jpg" class="card-img-top"
+                                            alt="set para regalo en caja bonita">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/set_regalo5.jpg" class="card-img-top"
+                                            alt="set de regalo de gomitas">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Surtida de gomitas hechas solo con
+                                ingredientes naturales. 1 kg de gomitas en un
+                                bonito empaque de regalo. Las gomitas están
+                                hechas con ingredientes de origen natural, sin adición de colorantes artificiales ni
+                                aditivos.</p>
+                            <h4>Precio: ARS $4000/1 un.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(5)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="myModal5" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Gomitas con formas de frutas</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-galeria">
+                                <div>
+                                    <figure>
+                                        <img src="media/productos/formas_frutas3.jpg" class="card-img-top"
+                                            alt="Gomitas_de_formas_de_frutas">
+                                    </figure>
+                                </div>
+                                <div class="modal-galeria1">
+                                    <figure>
+                                        <img src="media/productos/formas_frutas2.jpg" class="card-img-top"
+                                            alt="gomitas con forma de frutas">
+                                    </figure>
+                                    <figure>
+                                        <img src="media/productos/formas_frutas1.jpg" class="card-img-top"
+                                            alt="gomitas con forma de frutas">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p>Una variedad de sabores de frutas en las gomitas. Están
+                                hechas con forma de frutas hermosas y maduras. Basta con mirarlas una vez para querer
+                                probarlas, están tan detalladamente elaboradas que casi no se distinguen de las
+                                frutas reales. Las gomitas están
+                                hechas con ingredientes de origen natural, sin adición de colorantes artificiales ni
+                                aditivos.</p>
+                            <h4>Precio: ARS $450/100 gr.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                onclick="addToCart(6)">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalCarrito" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        <h2 class="modal-title">Carrito</h2>
+                        <div class="modal-header">
+                            <p>Total en carrito: <span id="modalTotalItems">0</span></p>
+                            <p>Total precio: $<span id="modalTotalPrice">0.00</span></p>
+                        </div>
+                        <div class="modal-body">
+                            <ul id="cartItemList" class="cart-list">
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="btnClearCart" class="btn btn-danger">Vaciar carrito</button>
+                            <button type="button" id="btn-comprar" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modalEntrega">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalEntrega" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Entrega</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form1" action="#" method="get">
+                                <h3>Datos de cliente</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control required-field" name="nombre" placeholder="Nombre"
+                                            required>
+                                        <div class="required-field-message" id="nombre-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="apellido" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control required-field" name="apellido" placeholder="Apellido"
+                                            required>
+                                        <div class="required-field-message" id="apellido-error">Este campo es
+                                            obligatorio.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control required-field" name="email"
+                                            placeholder="Correo electrónico" required>
+                                        <div class="required-field-message" id="email-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="tel" class="form-label">Teléfono</label>
+                                        <input type="tel"
+                                            class="form-control required-field" name="tel" placeholder="Teléfono" required minlength="11"
+                                            maxlength="15">
+                                        <div class="required-field-message" id="tel-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Datos de envío</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="city" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control required-field" id="city" name="city"
+                                            placeholder="Ciudad" required>
+                                        <div class="required-field-message" id="city-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="street" class="form-label">Calle</label>
+                                        <input type="text" class="form-control required-field" id="street" name="street"
+                                            placeholder="Calle" required>
+                                        <div class="required-field-message" id="street-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="house" class="form-label">Número</label>
+                                        <input type="text" class="form-control required-field" id="house" name="house"
+                                            placeholder="Número" required minlength="1" maxlength="10">
+                                        <div class="required-field-message" id="house-error">Este campo es obligatorio.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="date" class="form-label">Fecha de entrega</label>
+                                        <input type="date" class="form-control required-field" id="date" name="date" required>
+                                        <div class="required-field-message" id="date-error">Por favor ingrese una fecha
+                                            válida. Este campo es obligatorio.</div>
+                                    </div>
+                                </div>
+                                <h3>Datos de pago</h3>
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label">Número de tarjeta</label>
+                                    <input type="text" class="form-control required-field" id="cardNumber" name="cardNumber"
+                                        placeholder="1234 5678 9012 3456" required minlength="16" maxlength="16">
+                                    <div class="required-field-message" id="cardNumber-error">Este campo es obligatorio.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="expirationMonth" class="form-label ">Mes de vencimiento</label>
+                                        <select class="form-select required-field" id="expirationMonth" name="expirationMonth"
+                                            required>
+                                            <option value="" selected disabled class="select">Seleccionar mes</option>
+                                            <option value="01">Enero</option>
+                                            <option value="02">Febrero</option>
+                                            <option value="03">Marzo</option>
+                                            <option value="04">Abril</option>
+                                            <option value="05">Mayo</option>
+                                            <option value="06">Junio</option>
+                                            <option value="07">Julio</option>
+                                            <option value="08">Agosto</option>
+                                            <option value="09">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
+                                        <div class="required-field-message" id="expirationMonth-error">Este campo es
+                                            obligatorio.</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="expirationYear" class="form-label">Año de vencimiento</label>
+                                        <select class="form-select required-field" id="expirationYear" name="expirationYear" required>
+                                            <option value="" selected disabled class="select">Seleccionar año</option>
+                                            <option value="01">2024</option>
+                                            <option value="02">2025</option>
+                                            <option value="03">2026</option>
+                                            <option value="04">2027</option>
+                                            <option value="05">2028</option>
+                                            <option value="06">2029</option>
+                                            <option value="07">2030</option>
+                                            <option value="08">2031</option>
+                                            <option value="09">2032</option>
+                                            <option value="10">2033</option>
+                                            <option value="11">2034</option>
+                                            <option value="12">2035</option>
+                                            <option value="13">2036</option>
+                                            <option value="14">2037</option>
+                                            <option value="15">2038</option>
+                                            <option value="16">2039</option>
+                                            <option value="17">2040</option>
+                                            <option value="18">2041</option>
+                                        </select>
+                                        <div class="required-field-message" id="expirationYear-error">Este campo es
+                                            obligatorio.</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control required-field" id="cvv" name="cvv" placeholder="123"
+                                        required minlength="3" maxlength="3">
+                                    <div class="required-field-message" id="cvv-error">Este campo es obligatorio.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cardHolderName" class="form-label">Nombre en la tarjeta</label>
+                                    <input type="text" class="form-control required-field" id="cardHolderName" name="cardHolderName"
+                                        placeholder="Nombre Apellido" required>
+                                    <div class="required-field-message" id="cardHolderName-error">Este campo es
+                                        obligatorio.</div>
+                                </div>
+                                <div>
+                                    <h3>Total precio: ARS $<span id="modalEntregaTotalPrice">0.00</span></h3>
+                                </div>
+                                <div>
+                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                        id="btnClearCart1">Cancelar</button>
+                                    <button class="btn btn-success" id="btn-comprar1" type="submit"
+                                        value="Enviar Datos para comprar">Comprar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li>
+                    <p>© Deliciafruta 2024</p>
+                    <p>
+                        <a>Deliciafruta</a>
+                    </p>
+                </li>
+                <li>
+                    <p>Nuestras redes sociales</p>
+                    <a href="https://www.whatsapp.com/" class="btn btn-primary1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="https://telegram.com.es/" class="btn btn-primary1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" class="btn btn-primary1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100087913010834&locale=es_LA"
+                        class="btn btn-primary1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <p>Autor</p>
+                    <a class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#myModal6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-info-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="parcial.js"></script>
+</body>
+
+</html>
