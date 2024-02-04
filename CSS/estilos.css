@@ -1,0 +1,1020 @@
+@font-face {
+    font-family: "Arial Rounded MT Std Extra Bold";
+    font-weight: bold;
+    src: url('../tipofrafias/Arial_Rounded_MT_Std_Extra_Bold.woff') format('woff'),
+        url('../tipofrafias/Arial_Rounded_MT_Std_Extra_Bold.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(124, 75, 151);
+    font-family: "Arial Rounded MT Std Extra Bold";
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+body,
+head,
+header {
+    background-color: rgb(241, 247, 247);
+}
+
+.navbar {
+    background-color: rgb(241, 247, 247);
+    border: 0.1px solid rgb(124, 75, 151);
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(124, 75, 151);
+}
+
+.modal-footer {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-body img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-galeria {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 3%;
+}
+
+h1,
+h2,
+p {
+    color: rgb(124, 75, 151);
+    text-align: center;
+}
+
+.carousel {
+    padding: 0;
+}
+
+/*.navbar-brand img {
+    padding-left: 1%;
+}*/
+
+.todasSecciones {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#eventos h2 {
+    color: rgb(124, 75, 151);
+}
+
+.todasSecciones {
+    margin-top: 0;
+}
+
+.todasSecciones h2 {
+    color: rgb(94, 176, 48);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#quienes-somos,
+#eventos {
+    background-color: rgb(222, 244, 206);
+}
+
+#carouselExampleIndicators {
+    background-color: rgb(222, 244, 206);
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+
+#quienes-somos h2 {
+    color: rgb(94, 176, 48);
+}
+
+#nuestrosProductos,
+#catalogo,
+#contacto h2 {
+    color: rgb(94, 176, 48);
+}
+
+.card {
+    background-color: rgb(241, 247, 247);
+}
+
+.row {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card-body p.card-text {
+    color: rgb(124, 75, 151);
+}
+
+.card-body h4.card-title,
+.card-body h5 {
+    color: rgb(94, 176, 48);
+}
+
+.modal-content {
+    background-color: rgb(222, 244, 206);
+    text-align: center;
+}
+
+.modal-content .modal-body p {
+    color: rgb(124, 75, 151);
+    text-align: center;
+}
+
+.modal-content .modal-body h2 {
+    color: rgb(94, 176, 48);
+    text-align: center;
+}
+
+.modal-content h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn-primary {
+    background-color: rgb(124, 75, 151);
+    color: rgb(94, 176, 48);
+    border-color: rgb(94, 176, 48);
+}
+
+.btn-primary:hover {
+    background-color: rgb(94, 176, 48);
+    color: rgb(124, 75, 151);
+    border-color: rgb(124, 75, 151);
+}
+
+.btn-primary1 {
+    background-color: rgb(241, 247, 247);
+    border-color: rgb(124, 75, 151);
+}
+
+.btn-primary1:hover {
+    background-color: rgb(94, 176, 48);
+    border-color: rgb(124, 75, 151);
+}
+
+.btn-primary1 svg path {
+    color: rgb(124, 75, 151);
+}
+
+.btn-primary1:hover svg path {
+    color: rgb(241, 247, 247);
+}
+
+main h3 {
+    color: rgb(124, 75, 151);
+}
+
+.btn-primary2 {
+    background-color: rgb(241, 247, 247);
+    border-color: rgb(124, 75, 151);
+}
+
+.btn-primary2:hover {
+    background-color: rgb(222, 244, 206);
+    border-color: rgb(124, 75, 151);
+}
+
+.event h3 {
+    color: rgb(94, 176, 48);
+}
+
+#quienes-somos,
+#nuestrosProductos,
+#catalogo,
+#contacto,
+#eventos {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#nuestrosProductos h3 {
+    color: rgb(124, 75, 151);
+}
+
+.card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.event {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.highlighted {
+    font-size: 1.2em;
+    background-color: rgb(94, 176, 48);
+}
+
+.highlighted1 {
+    font-size: 1.2em;
+    color: rgb(124, 75, 151);
+}
+
+.cart-list li {
+    max-width: 100%;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modalTotalItems,
+#modalTotalPrice {
+    text-align: center;
+}
+
+.btn-primary4 svg path {
+    color: #dc3545;
+}
+
+.btn-primary3 svg path {
+    color: #28a745;
+}
+
+.btn-primary4,
+.btn-primary3,
+.btn-primary5 {
+    background-color: rgb(222, 244, 206);
+}
+
+.btn-primary5 svg path {
+    color: #dc3545;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.modal-content #btnClearCart {
+    text-align: center;
+}
+
+.modal-title {
+    margin: 0 auto;
+}
+
+#btnClearCart {
+    text-align: center;
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    padding: 7px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnClearCart:hover,
+#btnClearCart1:hover {
+    background-color: #a20010;
+}
+
+.form-control.required-field:invalid,
+.form-select.required-field:invalid {
+    border: 2px solid red;
+}
+
+
+.required-field-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+#btnClearCart1 {
+    width: 150px;
+    height: auto;
+    padding: 7px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#modalEntrega h2 {
+    color: rgb(124, 75, 151);
+}
+
+#btn-comprar {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+#btn-comprar1 {
+    width: 150px;
+    height: auto;
+}
+
+#btn-comprar:hover,
+#btn-comprar1:hover {
+    background-color: rgb(1, 71, 1);
+}
+
+.btn-close {
+    color: rgb(124, 75, 151);
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iconos button {
+    border: none;
+    outline: none;
+}
+
+.row,
+.event {
+    margin-top: 0;
+}
+
+#btn-ver-carrito {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.cart-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#cartItemList {
+    padding-left: 5px;
+}
+
+.footer p a {
+    background: url(../media/logo2.png) center center no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.app h2,
+h3 {
+    color: rgb(94, 176, 48);
+}
+
+.links .qr .apple,
+.links .qr .google {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.app img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.apple img,
+.google img {
+    width: 150px;
+    height: 150px;
+}
+
+.apple img,
+.apple h2,
+.google img,
+.google h2 {
+    text-align: center;
+}
+
+.apple h2 a {
+    background: url(../media/boton_app_store.png) center center no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 80px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.google h2 a {
+    background: url(../media/boton_google_play.png) center center no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 80px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.select {
+    color: rgb(94, 176, 48);
+    background-color: rgb(241, 247, 247);
+}
+
+h4 {
+    color: rgb(94, 176, 48);
+    text-align: center;
+}
+
+.contactos h3 {
+    color: rgb(124, 75, 151);
+}
+
+#form ::placeholder,
+#form1 ::placeholder,
+#form2 ::placeholder,
+#form3 ::placeholder,
+select ::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form1,
+#form2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input {
+    color: rgb(94, 176, 48);
+}
+
+.accordion-button,
+.accordion-item {
+    color: rgb(94, 176, 48);
+    background-color: rgb(241, 247, 247);
+}
+
+.accordion-body {
+    background-color: rgb(222, 244, 206);
+}
+
+#modalEntrega h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(94, 176, 48);
+}
+
+.metodos_de_pago {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#navbar-carrito .cart-count.has-items {
+    background-color: red;
+    color: white;
+}
+
+.filter-banner {
+    display: none;
+}
+
+.filter-banner figure img {
+    width: 99%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer p {
+    color: rgb(94, 176, 48);
+}
+
+.filtros a.btn {
+    margin: 5px;
+}
+
+.filtros {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+
+    .formula {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formula figure {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    #minicarrito {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        margin: 15px;
+    }
+
+    .card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .empresa img {
+        width: 20%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 70%;
+        height: auto;
+    }
+
+    .footer ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer ul li {
+        width: calc(100% / 3);
+        text-align: center;
+    }
+
+    main {
+        margin-top: 140px;
+    }
+
+    .navbar p a {
+        background: url(../media/logo2.png) center center no-repeat;
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        font-size: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .app,
+    .qr,
+    .links {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-gap: 1px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #movil img {
+        padding-top: 50px;
+    }
+
+    #contacto #form,
+    #contacto #mapa {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mapa iframe {
+        width: 100%;
+        height: 95%;
+    }
+
+    .navbar-nav li a:hover {
+        transform: scale(0.9);
+        transition: transform 0.9s ease;
+        color: rgb(94, 176, 48);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.9s ease;
+    }
+
+    .footer li a:hover {
+        transform: scale(1.2);
+        transition: transform 0.9s ease;
+    }
+
+    .apple h2 a:hover,
+    .google h2 a:hover {
+        transform: scale(1.2);
+        transition: transform 0.9s ease;
+    }
+
+    .btn-primary:hover {
+        transform: scale(0.9);
+        transition: transform 0.9s ease;
+    }
+
+    #principal_producto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .metodos_de_pago {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .metodos_de_pago img {
+        width: 80%;
+        height: auto;
+    }
+
+    #navbar-carrito svg {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #navbar-carrito svg path {
+        color: rgb(124, 75, 151);
+    }
+
+    #navbar-carrito:hover svg path {
+        color: rgb(94, 176, 48);
+        transform: scale(0.9);
+        transition: transform 0.9s ease;
+    }
+
+    #catalogo {
+        margin-top: 50px;
+    }
+
+    #navbar-carrito {
+        position: relative;
+    }
+
+    #navbar-carrito .cart-count {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4px 8px;
+        border-radius: 50%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .formula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empresa img {
+        width: 30%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 50%;
+        height: auto;
+    }
+
+    .footer ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer ul li {
+        width: calc(100% / 3);
+        text-align: center;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    .navbar p a {
+        background: url(../media/logo2.png) center center no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 0;
+    }
+
+    .app,
+    .qr,
+    .links {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 1px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #movil img {
+        padding-top: 70px;
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contacto #form,
+    #contacto #mapa {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10%;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mapa iframe {
+        width: 100%;
+        height: 95%;
+    }
+
+    .productos .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-nav li a:hover {
+        transform: scale(0.9);
+        transition: transform 0.9s ease;
+        color: rgb(94, 176, 48);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.9s ease;
+    }
+
+    .footer li a:hover {
+        transform: scale(1.2);
+        transition: transform 0.9s ease;
+    }
+
+    .apple h2 a:hover,
+    .google h2 a:hover {
+        transform: scale(1.2);
+        transition: transform 0.9s ease;
+    }
+
+    #principal_producto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .qr {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .metodos_de_pago {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .metodos_de_pago img {
+        width: 60%;
+        height: auto;
+    }
+
+    #navbar-carrito svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #minicarrito {
+        display: grid;
+        grid-template-columns: 2fr;
+        margin: 10px;
+    }
+
+    #catalogo {
+        margin-top: 30px;
+    }
+
+    #navbar-carrito {
+        display: flex;
+        align-items: center;
+    }
+
+    #navbar-carrito .cart-count {
+        padding: 4px 8px;
+        border-radius: 50%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .formula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empresa img {
+        width: 40%;
+        height: auto;
+    }
+
+    .formula img {
+        width: 40%;
+        height: auto;
+    }
+
+    #minicarrito h3 {
+        margin: 5px 0;
+    }
+
+    .footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer li {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .navbar p a {
+        background: url(../media/logo2.png) center center no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        font-size: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .app,
+    .qr,
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mapa iframe {
+        width: 100%;
+        height: 95%;
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #minicarrito {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+
+    #contacto #form,
+    #contacto #mapa {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+
+    #contacto #form {
+        border: 1px solid rgb(94, 176, 48);
+        ;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mapa iframe {
+        width: 100%;
+        height: 95%;
+    }
+
+    #principal_producto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .metodos_de_pago {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metodos_de_pago img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    #navbar-carrito svg {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    #catalogo {
+        margin-top: 20px;
+    }
+
+    #navbar-carrito {
+        display: flex;
+        align-items: center;
+    }
+
+    #navbar-carrito .cart-count {
+        padding: 4px 8px;
+        border-radius: 50%;
+    }
+
+}
