@@ -333,7 +333,7 @@ dateField.addEventListener('change', function () {
     const selectedDate = new Date(dateField.value);
     const today = new Date();
 
-    if (selectedDate <= today) {
+    if (selectedDate >= today) {
         dateErrorMessage.textContent = '';
         dateErrorMessage.style.display = 'none';
     } else {
