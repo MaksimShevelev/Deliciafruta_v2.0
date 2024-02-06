@@ -332,6 +332,7 @@ const dateErrorMessage = document.getElementById('date-error');
 dateField.addEventListener('change', function () {
     const selectedDate = new Date(dateField.value);
     const today = new Date();
+    today.setHours(0, 0, 0, 0); // Установим время на сегодняшний день в начало
 
     if (selectedDate < today) {
         dateErrorMessage.textContent = 'Por favor ingrese una fecha válida. Este campo es obligatorio.';
@@ -341,5 +342,6 @@ dateField.addEventListener('change', function () {
         dateErrorMessage.style.display = 'none';
     }
 });
+
 
 
