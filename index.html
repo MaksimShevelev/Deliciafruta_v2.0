@@ -632,6 +632,7 @@
                         <div>
                             <figure><img src="media/foto.jpg" alt="foto de alumno"></figure>
                             <p>Shevelev Maxim</p>
+                            <p>14/04/1991</p>
                         </div>
                         <div class="modal-body">
                             <a href="mailto:m.v.shevelev1991@gmail.com?subject=¡Hola!" target="_blank"
@@ -950,14 +951,14 @@
                                     <div class="col-6">
                                         <label for="nombre" class="form-label">Nombre</label>
                                         <input type="text" class="form-control required-field" name="nombre" placeholder="Nombre"
-                                            required>
+                                            required pattern="^[a-zA-Zа-яА-Я ]+$" title="Ingrese solo letras, por favor">
                                         <div class="required-field-message" id="nombre-error">Este campo es obligatorio.
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <label for="apellido" class="form-label">Apellido</label>
                                         <input type="text" class="form-control required-field" name="apellido" placeholder="Apellido"
-                                            required>
+                                            required pattern="^[a-zA-Zа-яА-Я ]+$" title="Ingrese solo letras, por favor">
                                         <div class="required-field-message" id="apellido-error">Este campo es
                                             obligatorio.</div>
                                     </div>
@@ -973,8 +974,8 @@
                                     <div class="col-6">
                                         <label for="tel" class="form-label">Teléfono</label>
                                         <input type="tel"
-                                            class="form-control required-field" name="tel" placeholder="Teléfono" required minlength="11"
-                                            maxlength="15">
+                                            class="form-control required-field" name="tel" placeholder="Teléfono" required pattern="\d+" minlength="11"
+                                            maxlength="15" title="Ingrese solo números, por favor">
                                         <div class="required-field-message" id="tel-error">Este campo es obligatorio.
                                         </div>
                                     </div>
@@ -984,14 +985,14 @@
                                     <div class="col-6">
                                         <label for="city" class="form-label">Ciudad</label>
                                         <input type="text" class="form-control required-field" id="city" name="city"
-                                            placeholder="Ciudad" required>
+                                            placeholder="Ciudad" required pattern="^[a-zA-Zа-яА-Я ]+$" title="Ingrese solo letras, por favor">
                                         <div class="required-field-message" id="city-error">Este campo es obligatorio.
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <label for="street" class="form-label">Calle</label>
                                         <input type="text" class="form-control required-field" id="street" name="street"
-                                            placeholder="Calle" required>
+                                            placeholder="Calle" required pattern="^[a-zA-Zа-яА-Я ]+$" title="Ingrese solo letras, por favor">
                                         <div class="required-field-message" id="street-error">Este campo es obligatorio.
                                         </div>
                                     </div>
@@ -1000,7 +1001,8 @@
                                     <div class="col-6">
                                         <label for="house" class="form-label">Número</label>
                                         <input type="text" class="form-control required-field" id="house" name="house"
-                                            placeholder="Número" required minlength="1" maxlength="10">
+                                            placeholder="Número" required pattern="\d+" minlength="1"
+                                            maxlength="10" title="Ingrese solo números, por favor">
                                         <div class="required-field-message" id="house-error">Este campo es obligatorio.
                                         </div>
                                     </div>
@@ -1015,7 +1017,8 @@
                                 <div class="mb-3">
                                     <label for="cardNumber" class="form-label">Número de tarjeta</label>
                                     <input type="text" class="form-control required-field" id="cardNumber" name="cardNumber"
-                                        placeholder="1234 5678 9012 3456" required minlength="16" maxlength="16">
+                                        placeholder="0000 0000 0000 0000" required pattern="\d+" minlength="16"
+                                        maxlength="16" title="Ingrese solo números, por favor">
                                     <div class="required-field-message" id="cardNumber-error">Este campo es obligatorio.
                                     </div>
                                 </div>
@@ -1071,13 +1074,14 @@
                                 <div class="mb-3">
                                     <label for="cvv" class="form-label">CVV</label>
                                     <input type="text" class="form-control required-field" id="cvv" name="cvv" placeholder="123"
-                                        required minlength="3" maxlength="3">
+                                        required pattern="\d+" minlength="3"
+                                        maxlength="3" title="Ingrese solo números, por favor">
                                     <div class="required-field-message" id="cvv-error">Este campo es obligatorio.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="cardHolderName" class="form-label">Nombre en la tarjeta</label>
                                     <input type="text" class="form-control required-field" id="cardHolderName" name="cardHolderName"
-                                        placeholder="Nombre Apellido" required>
+                                        placeholder="Nombre Apellido" required pattern="^[a-zA-Zа-яА-Я ]+$" title="Ingrese solo letras, por favor">
                                     <div class="required-field-message" id="cardHolderName-error">Este campo es
                                         obligatorio.</div>
                                 </div>
