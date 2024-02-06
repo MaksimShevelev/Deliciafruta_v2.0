@@ -333,15 +333,12 @@ dateField.addEventListener('change', function () {
     const selectedDate = new Date(dateField.value);
     const today = new Date();
 
-    if (selectedDate = today) {
-        dateErrorMessage.textContent = '';
-        dateErrorMessage.style.display = 'none';
-    } else if (selectedDate > today) {
-        dateErrorMessage.textContent = '';
-        dateErrorMessage.style.display = 'none';
-    } else {
+    if (selectedDate > today) {
         dateErrorMessage.textContent = 'Por favor ingrese una fecha válida. Este campo es obligatorio.';
         dateErrorMessage.style.display = 'block';
+    } else {
+        dateErrorMessage.textContent = '';
+        dateErrorMessage.style.display = 'none';
     }
 });
 
