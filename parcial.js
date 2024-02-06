@@ -296,7 +296,7 @@ document.getElementById('btnClearCart').addEventListener('click', function () {
 });
 
 function clearCart() {
-    cartItems = []; // Присваиваем пустой массив для очистки корзины
+    cartItems = [];
 }
 
 // Activar boton "Comprar" 
@@ -333,7 +333,10 @@ dateField.addEventListener('change', function () {
     const selectedDate = new Date(dateField.value);
     const today = new Date();
 
-    if (selectedDate >= today) {
+    if (selectedDate = today) {
+        dateErrorMessage.textContent = '';
+        dateErrorMessage.style.display = 'none';
+    } else if (selectedDate > today) {
         dateErrorMessage.textContent = '';
         dateErrorMessage.style.display = 'none';
     } else {
