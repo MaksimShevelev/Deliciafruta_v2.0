@@ -17,6 +17,13 @@
 body,
 head,
 header {
+    margin: 2px;
+}
+
+body,
+head,
+header,
+footer {
     background-color: rgb(241, 247, 247);
 }
 
