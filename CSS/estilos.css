@@ -7,7 +7,8 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding-right: 2px;
+    padding-left: 2px;
     color: rgb(124, 75, 151);
     font-family: "Arial Rounded MT Std Extra Bold";
     font-weight: bold;
@@ -18,11 +19,6 @@ body,
 head,
 header {
     background-color: rgb(241, 247, 247);
-}
-
-body {
-    padding-right: 100px;
-    padding-left: 100px;
 }
 
 .navbar {
