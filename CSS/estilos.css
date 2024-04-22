@@ -17,14 +17,14 @@
 body,
 head,
 header {
-    margin: 15px;
+    background-color: rgb(241, 247, 247);
 }
 
 body,
 head,
 header,
 footer {
-    background-color: rgb(241, 247, 247);
+    margin: 15px;
 }
 
 .navbar {
