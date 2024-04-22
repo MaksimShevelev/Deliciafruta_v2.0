@@ -7,13 +7,18 @@
 
 * {
     margin: 0;
-    padding-right: 1px;
-    padding-left: 1px;
+    padding: 0;
     color: rgb(124, 75, 151);
     font-family: "Arial Rounded MT Std Extra Bold";
     font-weight: bold;
     overflow-x: hidden;
 }
+
+body {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
 
 body,
 head,
